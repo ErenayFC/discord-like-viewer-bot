@@ -11,7 +11,6 @@ async function updateChannelName() {
   await page.goto(youtubeLink);
 
   const likeCount = await page.$eval('.yt-spec-button-shape-next.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--segmented-start .yt-spec-button-shape-next__button-text-content', (element) => {
-    console.log(element);
     return element.textContent;
   });
 
